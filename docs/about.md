@@ -1,7 +1,9 @@
-# Autor / autores
+# Personas que lo hacen posible
 
 TODO:
 
-Comunidad Maker
+Licencia: ...
 
-Colaboradores -> [aquí](https://github.com/Respyrator/respirador/graphs/contributors)
+Autores: Comunidad Maker
+
+[Colaboradores](https://github.com/Respyrator/respirador/graphs/contributors)
