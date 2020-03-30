@@ -1,3 +1,0 @@
-# Instalacion en Windows
-
-TODO:
