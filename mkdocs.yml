@@ -1,26 +1,22 @@
 # 1. Información del Taller
-site_name: Taller de X # TODO:
-site_description: La Jaqueria - Taller de X # TODO:
-site_author: Cristóbal Contreras Rubio # TODO:
-site_url: https://crisconru.github.io/ # TODO:
+site_name: Respyrador
+site_description: Respyrador Artificial Open Source
+site_author: Comunidad Maker # TODO:
+site_url: https://respyrator.github.io/respirador/
 
 # 2. Repositorio
-repo_name: crisconru/plantilla-taller # TODO:
-repo_url: https://github.com/crisconru/plantilla-taller # TODO:
+repo_name: Respyrator/respirador
+repo_url: https://github.com/Respyrator/respirador
 edit_uri: ""
 
 # 3. Copyright
-copyright: Copyright &copy; 2019 - 2020 Cristóbal Contreras # TODO:
+copyright: Copyright &copy; 2020 Comunidad Maker # TODO:
 
 # 4. RRSS
 extra:
   social:
     - type: github
-      link: https://github.com/LaJaqueria # TODO:
-    - type: twitter
-      link: https://twitter.com/lajaqueria # TODO:
-    - type: linkedin
-      link: https://www.linkedin.com/company/lajaqueria/ # TODO:
+      link: https://github.com/Respyrator
 
 # 5. Navegación
 nav:
@@ -50,13 +46,13 @@ theme:
   name: material
   # Color - Fuentes - Lenguaje
   palette:
-    primary: blue grey # TODO:
-    accent: red # TODO:
+    primary: blue
+    accent: red
   font:
-    text: Roboto #TODO:
-    code: Roboto Mono # TODO:
-  logo: img/favicon.png #TODO:
-  favicon: img/favicon.png # TODO:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/tubo-respirador.png #TODO:
+  favicon: img/tubo-respirador.png # TODO:
   language: es
   # Página 404
   static_templates:
