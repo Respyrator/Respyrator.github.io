@@ -23,18 +23,19 @@ nav:
   # Modelo para empezar: Intro, Info del autor y la instalación
   - Introducción: index.md # TODO:
   - Autor / Autores: about.md # TODO:
-  - Instalación:
-    - Instalación: instalacion/instalacion.md # TODO:
-    - Windows: instalacion/windows.md # TODO:
-    - Mac OS: instalacion/macos.md # TODO:
-    - Linux: instalacion/linux.md # TODO:
+  - Instalacion: instalacion/instalacion.md
+    #- Instalación:
+    #- Instalación: instalacion/instalacion.md # TODO:
+    #- Windows: instalacion/windows.md # TODO:
+    #- Mac OS: instalacion/macos.md # TODO:
+    #- Linux: instalacion/linux.md # TODO:
   # Aquí seguirían tus secciones
   - Requisitos del proyecto:
     - Requisitos: requisitos/requisitos.md
     - Enviar comandos: requisitos/rx.md
     - Recibir datos: requisitos/tx.md
   # Por último, comenta estas 4 líneas
-  - Ayuda para escribir: # TODO:
+  - Ayuda para documentar:
     - Notas: ayuda/ayuda.md # TODO:
     - Markdown: ayuda/markdown.md # TODO:
     - Material Design: ayuda/material.md # TODO:
