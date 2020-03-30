@@ -1,0 +1,3 @@
+# Recibir información
+
+TODO:
