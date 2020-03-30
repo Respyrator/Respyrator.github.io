@@ -1,0 +1,105 @@
+# 1. Información del Taller
+site_name: Respyrador
+site_description: Respyrador Artificial Open Source
+site_author: Comunidad Maker # TODO:
+site_url: https://respyrator.github.io/respirador/
+
+# 2. Repositorio
+repo_name: Respyrator/respirador
+repo_url: https://github.com/Respyrator/respirador
+edit_uri: ""
+
+# 3. Copyright
+copyright: Copyright &copy; 2020 Comunidad Maker # TODO:
+
+# 4. RRSS
+extra:
+  social:
+    - type: github
+      link: https://github.com/Respyrator
+
+# 5. Navegación
+nav:
+  # Modelo para empezar: Intro, Info del autor y la instalación
+  - Introducción: index.md
+  - Autor / Autores: about.md # TODO:
+  - Colaborar: colaborar.md
+  - Ayuda para documentar:
+    - Notas: ayuda/ayuda.md
+    - Markdown: ayuda/markdown.md
+    - Material Design: ayuda/material.md
+  - Instalacion: instalacion.md
+  # Aquí seguirían tus secciones
+  - Requisitos del proyecto:
+    - Requisitos: requisitos/requisitos.md
+    - Recibir datos: requisitos/tx.md
+    - Enviar comandos: requisitos/rx.md
+
+# 6. Google Analytics
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto
+
+# 7. Configuración del tema
+theme:
+  name: material
+  # Color - Fuentes - Lenguaje
+  palette:
+    primary: blue
+    accent: red
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/tubo-respirador.png #TODO:
+  favicon: img/tubo-respirador.png # TODO:
+  language: es
+  # Página 404
+  static_templates:
+    - 404.html
+  # No incluir los JavaScript de MkDocs
+  #include_search_page: false
+  #search_index_only: true
+
+# 8. Extensiones
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      linenums: true
+      # guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 9. Necesario para la extensión pydownx.arithmatex
+extra_javascript:
+  # Este fichero es opcional y solo si se quiere sobreescribir la configuracion del plugin
+  #- js/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+# 10. Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
