@@ -32,8 +32,8 @@ nav:
   # Aquí seguirían tus secciones
   - Requisitos del proyecto:
     - Requisitos: requisitos/requisitos.md
-    - Enviar comandos: requisitos/rx.md
     - Recibir datos: requisitos/tx.md
+    - Enviar comandos: requisitos/rx.md
 
 # 6. Google Analytics
 #google_analytics:

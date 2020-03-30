@@ -1,5 +1,7 @@
 # Enviar comandos
 
+Para modificar parámetros del respirador, hay que enviar una trama con el siguiente formato:
+
 | Campo | Dirección (byte) | Tamaño (bits) | Uso, Valores, Comentarios |
 | :- | :-: | :-: | :- |
 | Header | 0x00 | 8 | 0x55 |

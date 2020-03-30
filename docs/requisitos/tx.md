@@ -1,6 +1,6 @@
 # Leer datos del respirador
 
-El respirador de la trama
+El respirador manda una trama estructurada de la siguiente manera:
 
 | Campo | Dirección (byte) | Tamaño (bits) | Uso, Valores, Comentarios |
 | :- | :-: | :-: | :-  |
