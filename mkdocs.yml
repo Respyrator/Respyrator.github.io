@@ -1,44 +1,39 @@
 # 1. Información del Taller
-site_name: Taller de X # TODO:
-site_description: La Jaqueria - Taller de X # TODO:
-site_author: Cristóbal Contreras Rubio # TODO:
-site_url: https://crisconru.github.io/ # TODO:
+site_name: Respyrador
+site_description: Respyrador Artificial Open Source
+site_author: Comunidad Maker # TODO:
+site_url: https://respyrator.github.io/respirador/
 
 # 2. Repositorio
-repo_name: crisconru/plantilla-taller # TODO:
-repo_url: https://github.com/crisconru/plantilla-taller # TODO:
+repo_name: Respyrator/respirador
+repo_url: https://github.com/Respyrator/respirador
 edit_uri: ""
 
 # 3. Copyright
-copyright: Copyright &copy; 2019 - 2020 Cristóbal Contreras # TODO:
+copyright: Copyright &copy; 2020 Comunidad Maker # TODO:
 
 # 4. RRSS
 extra:
   social:
     - type: github
-      link: https://github.com/LaJaqueria # TODO:
-    - type: twitter
-      link: https://twitter.com/lajaqueria # TODO:
-    - type: linkedin
-      link: https://www.linkedin.com/company/lajaqueria/ # TODO:
+      link: https://github.com/Respyrator
 
 # 5. Navegación
 nav:
   # Modelo para empezar: Intro, Info del autor y la instalación
-  - Introducción: index.md # TODO:
+  - Introducción: index.md
   - Autor / Autores: about.md # TODO:
-  - Instalación:
-    - Instalación: instalacion/instalacion.md # TODO:
-    - Windows: instalacion/windows.md # TODO:
-    - Mac OS: instalacion/macos.md # TODO:
-    - Linux: instalacion/linux.md # TODO:
+  - Colaborar: colaborar.md
+  - Ayuda para documentar:
+    - Notas: ayuda/ayuda.md
+    - Markdown: ayuda/markdown.md
+    - Material Design: ayuda/material.md
+  - Instalacion: instalacion.md
   # Aquí seguirían tus secciones
-  # TODO:
-  # Por último, comenta estas 4 líneas
-  - Ayuda para escribir: # TODO:
-    - Notas: ayuda/ayuda.md # TODO:
-    - Markdown: ayuda/markdown.md # TODO:
-    - Material Design: ayuda/material.md # TODO:
+  - Requisitos del proyecto:
+    - Requisitos: requisitos/requisitos.md
+    - Recibir datos: requisitos/tx.md
+    - Enviar comandos: requisitos/rx.md
 
 # 6. Google Analytics
 #google_analytics:
@@ -50,13 +45,13 @@ theme:
   name: material
   # Color - Fuentes - Lenguaje
   palette:
-    primary: blue grey # TODO:
-    accent: red # TODO:
+    primary: blue
+    accent: red
   font:
-    text: Roboto #TODO:
-    code: Roboto Mono # TODO:
-  logo: img/favicon.png #TODO:
-  favicon: img/favicon.png # TODO:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/tubo-respirador.png #TODO:
+  favicon: img/tubo-respirador.png # TODO:
   language: es
   # Página 404
   static_templates:

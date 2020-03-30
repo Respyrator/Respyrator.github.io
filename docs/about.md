@@ -1,13 +1,9 @@
-# Autor / autores
+# Personas que lo hacen posible
 
 TODO:
 
-![Foto de perfil](img/perfil.jpg)
+Licencia: ...
 
-Autor: Cristóbal Contreras Rubio
+Autores: Comunidad Maker
 
-Bio: ...
-
-Motivaciones: ...
-
-Pon info sobre ti y si quieres hacer anotaciones antes del taller.
+[Colaboradores](https://github.com/Respyrator/respirador/graphs/contributors)
