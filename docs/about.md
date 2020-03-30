@@ -2,12 +2,6 @@
 
 TODO:
 
-![Foto de perfil](img/perfil.jpg)
+Comunidad Maker
 
-Autor: Cristóbal Contreras Rubio
-
-Bio: ...
-
-Motivaciones: ...
-
-Pon info sobre ti y si quieres hacer anotaciones antes del taller.
+Colaboradores -> [aquí](https://github.com/Respyrator/respirador/graphs/contributors)
