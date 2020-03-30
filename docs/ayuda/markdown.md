@@ -36,7 +36,7 @@ O debes de poner una línea vacía entre medias.
 
 Así se pone un [enlace a una página de Internet](https://lajaqueria.org).
 
-Así se pone un [enlace a una página del propio taller](../instalacion/linux.md).
+Así se pone un [enlace a una página del propio taller](../instalacion.md).
 
 ## Imágenes
 
@@ -46,7 +46,13 @@ Así se pone una imagen desde Internet
 
 Y así se pone una imagen desde el propio taller
 
-![Imagen del taller](../img/logo.png)
+![Imagen del taller](../img/tubo-respirador.png)
+
+Si quieres centrarla puedes usar
+
+<center>
+    ![Imagen de internet](https://lajaqueria.org/images/logo.png)
+</center>
 
 ## Listas
 
