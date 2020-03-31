@@ -24,8 +24,9 @@ nav:
   - Introducción: index.md
   - Autor / Autores: about.md # TODO:
   - Colaborar: colaborar.md
+  # Ayuda para documentar
   - Ayuda para documentar:
-    - Notas: ayuda/ayuda.md
+    - Como documentar: ayuda/ayuda.md
     - Markdown: ayuda/markdown.md
     - Material Design: ayuda/material.md
   - Instalacion: instalacion.md
@@ -34,6 +35,7 @@ nav:
     - Requisitos: requisitos/requisitos.md
     - Recibir datos: requisitos/tx.md
     - Enviar comandos: requisitos/rx.md
+  
 
 # 6. Google Analytics
 #google_analytics:

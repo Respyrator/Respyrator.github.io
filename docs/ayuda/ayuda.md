@@ -1,4 +1,4 @@
-# Ayuda para documentar
+# Como documentar
 
 ## Documentación:
 
