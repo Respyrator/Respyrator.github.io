@@ -2,10 +2,9 @@
 # Installed -------------------------------------------------------------------
 # Coded -----------------------------------------------------------------------
 import settings
-#from settings import logapp, logser
+from settings import logapp
 # Program ---------------------------------------------------------------------
 LOG = 'SRC:'
 
 __all__ = ['settings']
-
 logapp.debug(f'{LOG} settings loaded')

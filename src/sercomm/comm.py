@@ -2,8 +2,8 @@
 # Installed -------------------------------------------------------------------
 from serial import Serial
 # Coded -----------------------------------------------------------------------
-from settings import logapp
+from src.settings import logapp
 # Program ---------------------------------------------------------------------
+LOG = 'COMM:'
 
-logapp.info(f'hola saceio')
-ser = Serial()
+logapp.info(f'{LOG} comm')

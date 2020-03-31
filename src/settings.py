@@ -7,7 +7,8 @@ import logging
 # Coded -----------------------------------------------------------------------
 # Program ---------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parents[1]
-SRC_DIR = BASE_DIR / 'respirador'
+print(f'BASE_DIR = {BASE_DIR}')
+SRC_DIR = BASE_DIR / 'src'
 # PARSE CONFIGURATION ---------------------------------------------------------
 CONF_FILE = SRC_DIR / 'configuration.ini'
 cfg = configparser.ConfigParser()
