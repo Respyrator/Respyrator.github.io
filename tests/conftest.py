@@ -1,10 +1,13 @@
 # Built-in --------------------------------------------------------------------
 # Installed -------------------------------------------------------------------
+from pytest import fixture
 # Coded -----------------------------------------------------------------------
-import settings
-from settings import logapp
+from src.sercomm.comm import Comm
 # Program ---------------------------------------------------------------------
-LOG = 'SRC:'
 
-__all__ = ['settings']
-logapp.debug(f'{LOG} settings loaded')
+
+@fixture(scope='class')
+def get_comm():
+    ser = Comm()
+    yield ser
+    ser.close()

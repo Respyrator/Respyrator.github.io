@@ -8,6 +8,7 @@ pylint = "*"
 flake8 = "*"
 mypy = "*"
 pytest = "*"
+platformio = "*"
 
 [packages]
 pyserial = "*"
@@ -23,4 +24,4 @@ python_version = "3.8"
 [scripts]
 serve = "mkdocs serve"
 deploy = "mkdocs gh-deploy"
-test = "python -m pytest"
+test = "python -m pytest --cache-clear"
