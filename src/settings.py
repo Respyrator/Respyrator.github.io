@@ -6,15 +6,14 @@ import logging
 # Installed -------------------------------------------------------------------
 # Coded -----------------------------------------------------------------------
 # Program ---------------------------------------------------------------------
-BASE_DIR = Path(__file__).resolve().parents[1]
-print(f'BASE_DIR = {BASE_DIR}')
-SRC_DIR = BASE_DIR / 'src'
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+BASE_DIR = Path(__file__).resolve().parents[0]
 # PARSE CONFIGURATION ---------------------------------------------------------
-CONF_FILE = SRC_DIR / 'configuration.ini'
+CONF_FILE = BASE_DIR / 'configuration.ini'
 cfg = configparser.ConfigParser()
 cfg.read(str(CONF_FILE))
 # LOG -------------------------------------------------------------------------
-LOG_DIR = BASE_DIR / 'log'
+LOG_DIR = PROJECT_DIR / 'log'
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 # Loggers
 logapp = logging.getLogger('app')
