@@ -8,6 +8,7 @@ pylint = "*"
 flake8 = "*"
 mypy = "*"
 pytest = "*"
+platformio = "*"
 
 [packages]
 pyserial = "*"
