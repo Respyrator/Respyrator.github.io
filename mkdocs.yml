@@ -30,12 +30,17 @@ nav:
     - Markdown: ayuda/markdown.md
     - Material Design: ayuda/material.md
   - Instalacion: instalacion.md
-  # Aquí seguirían tus secciones
+  # Requisitos
   - Requisitos del proyecto:
     - Requisitos: requisitos/requisitos.md
     - Recibir datos: requisitos/tx.md
     - Enviar comandos: requisitos/rx.md
-  
+  # Programa
+  - Proyecto:
+    - Repositorio: programa/repositorio.md
+    - Programa: programa/programa.md
+    - Comunicacion con Respirador: programa/comunicacion.md
+    - Interfaz gráfica: programa/gui.md
 
 # 6. Google Analytics
 #google_analytics:
