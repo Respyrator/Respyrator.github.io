@@ -1,57 +1,67 @@
 # Built-in --------------------------------------------------------------------
 from time import sleep, time
+from dataclasses import dataclass
+from typing import Optional
+from abc import abstractmethod
 # Installed -------------------------------------------------------------------
 import serial
-from serial.tools.list_ports import comports
 # Coded -----------------------------------------------------------------------
 from src import logapp
+from src.device import Device
 # Program ---------------------------------------------------------------------
-LOG = 'COMM:'
 
-BAUDRATE = 115200
-BYTESIZE = serial.EIGHTBITS
-PARITY = serial.PARITY_NONE
-STOPBITS = serial.STOPBITS_ONE
-READ_TIMEOUT = 1.0
-WRITE_TIMEOUT = 1.0
+@dataclass
+class CommConfig:
+    """Configuration for a serial connection."""
+    BAUDRATE:int
+    BYTESIZE: int
+    PARITY:int
+    STOPBITS:float
 
-# Official Arduino Mega Board identifier
-ARDUINO_MANUFACTURER = 'Arduino (www.arduino.cc)'
-# Unofficial Arduino Mega Board identifier
-OEM_PRODUCT = 'USB2.0-Serial'
+class Comm(Device):
 
+    def __init__(self, configuration: CommConfig):
+        """Create a new class instance.
+        
+        :param config: Serial configuration.
+        """
+        super().__init__()
+        self.log_prefix: str = "COMM:"
+        self.read_timeout: float = 1.0
+        self.write_timeout: float = 1.0
+        self.__ser: Optional[serial.Serial] = None
+        self.configuration = configuration
 
-class Comm:
-    def __init__(self):
-        logapp.debug(f'{LOG} __init__()')
-        self.ser: serial.Serial = serial.Serial(
-            baudrate=BAUDRATE,
-            bytesize=BYTESIZE, parity=PARITY, stopbits=STOPBITS,
-            timeout=READ_TIMEOUT, write_timeout=WRITE_TIMEOUT
+    @property
+    def ser(self):
+        """Connection to the serial port."""
+        if self.__ser:
+            return self.__ser
+        self.__ser: serial.Serial = serial.Serial(
+            baudrate=self.configuration.BAUDRATE,
+            bytesize=self.configuration.BYTESIZE,
+            parity=self.configuration.PARITY,
+            stopbits=self.configuration.STOPBITS,
+            timeout=self.read_timeout,
+            write_timeout=self.write_timeout
         )
+        return self.__ser
 
-    def _reset_buffers(self):
+    def _reset_buffers(self) -> None:
         self.ser.reset_input_buffer()
         self.ser.reset_output_buffer()
 
     def _check_device(self, field, reference) -> bool:
-        logapp.debug(f'{LOG} _check_device({field}, {reference})')
+        logapp.debug(f'{self.log_prefix} _check_device({field}, {reference})')
         return True if (field is not None) and (reference.find(field) > -1) \
             else False
 
-    def respirator_port(self) -> str:
-        logapp.debug(f'{LOG} respirator_port()')
-        for i in comports():
-            logapp.debug(f'{LOG} Serial devices at {i.device}')
-            if self._check_device(i.manufacturer, ARDUINO_MANUFACTURER) or \
-               self._check_device(i.product, OEM_PRODUCT):
-                logapp.debug(f'{LOG} respirator at {i.device}')
-                return i.device
-        logapp.debug(f'{LOG} respirator not finded')
-        return ''
+    @abstractmethod
+    def respirator_port(self):
+        raise NotImplementedError("repirator_port method not implemented")
 
     def connect(self, rep=3) -> bool:
-        logapp.debug(f'{LOG} connect({3})')
+        logapp.debug(f'{self.log_prefix} connect({3})')
         if rep:
             if not self.ser.is_open:
                 port = self.respirator_port()
@@ -65,7 +75,7 @@ class Comm:
         return False
 
     def _read(self, rep=3) -> bytes:
-        logapp.debug(f'{LOG} read()')
+        logapp.debug(f'{self.log_prefix} read()')
         try:
             if self.ser.is_open or self.connect():
                 t_start = time()
@@ -75,42 +85,42 @@ class Comm:
                         elapsed = True
                 if not elapsed:
                     msg = self.ser.readline()
-                    logapp.debug(f'{LOG} received = {msg}')
+                    logapp.debug(f'{self.log_prefix} received = {msg}')
                     return msg
             raise CommException('Respirator is not connected')
         except serial.SerialException as err:
-            logapp.exception(f'{LOG} error = {err}')
+            logapp.exception(f'{self.log_prefix} error = {err}')
             return b''
 
     def read_bytes(self) -> bytes:
-        logapp.debug(f'{LOG} read_bytes()')
+        logapp.debug(f'{self.log_prefix} read_bytes()')
         return self._read()
 
     def read_string(self) -> str:
-        logapp.debug(f'{LOG} read_string()')
+        logapp.debug(f'{self.log_prefix} read_string()')
         return self._read().decode('utf-8').strip('\r\n')
 
     def _send(self, data: bytes):
-        logapp.debug(f'{LOG} _send({data})')
+        logapp.debug(f'{self.log_prefix} _send({data})')
         try:
             if self.ser.is_open or self.connect():
                 self.ser.write(data)
             else:
                 raise CommException('Respirator is not connected')
         except (serial.SerialException, serial.SerialTimeoutException) as err:
-            logapp.debug(f'{LOG} error = {err}')
+            logapp.debug(f'{self.log_prefix} error = {err}')
             raise err
 
     def send_bytes(self, data: bytes):
-        logapp.debug(f'{LOG} send_bytes({data})')
+        logapp.debug(f'{self.log_prefix} send_bytes({data})')
         self._send(data)
 
     def send_string(self, data: str):
-        logapp.debug(f'{LOG} send_string({data})')
+        logapp.debug(f'{self.log_prefix} send_string({data})')
         self._send(data.encode())
 
     def close(self):
-        logapp.debug(f'{LOG} close()')
+        logapp.debug(f'{self.log_prefix} close()')
         self.ser.close()
 
 
