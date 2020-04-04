@@ -20,15 +20,16 @@ extra:
 
 # 5. Navegación
 nav:
-  # Modelo para empezar: Intro, Info del autor y la instalación
+  # Info del proyecto y autores
   - Introducción: index.md
   - Autor / Autores: about.md # TODO:
-  - Colaborar: colaborar.md
-  # Ayuda para documentar
-  - Ayuda para documentar:
-    - Como documentar: ayuda/ayuda.md
-    - Markdown: ayuda/markdown.md
-    - Material Design: ayuda/material.md
+    # Colaboración
+  - Colaborar: 
+    - Como colaborar: colaborar/colaborar.md
+    - Como documentar: 
+      - Documentación: colaborar/documentar.md
+      - Escribir en Markdown: colaborar/markdown.md
+      - Carácterísticas extra: colaborar/material.md
   - Instalacion: instalacion.md
   # Requisitos
   - Requisitos del proyecto:

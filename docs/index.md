@@ -7,7 +7,6 @@ Debido a la alta demanda y a la variabilidad en los diferentes tipos de variador
 
 
 - [Personas que lo hacen posible](about.md)
-- [Como colaborar](colaborar.md)
-- [Ayuda con la documentación](ayuda/ayuda.md)
+- [Como colaborar](colaborar/colaborar.md)
 - [Instalación](instalacion.md)
 - [Requisitos](requisitos/requisitos.md)
