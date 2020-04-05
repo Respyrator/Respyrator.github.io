@@ -22,7 +22,7 @@ extra:
 nav:
   # Info del proyecto y autores
   - Introducción: index.md
-  - Autor / Autores: about.md # TODO:
+  - Sobre nosotros: about.md # TODO:
     # Colaboración
   - Colaborar: 
     - Como colaborar: colaborar/colaborar.md
