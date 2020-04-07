@@ -14,7 +14,17 @@
 # You should have received a copy of the GNU General Public License
 # along with Respyrador.  If not, see <http://www.gnu.org/licenses/>.
 
-# Built-in --------------------------------------------------------------------
-# Installed -------------------------------------------------------------------
-# Coded -----------------------------------------------------------------------
-# Program ---------------------------------------------------------------------
+import setuptools
+
+setuptools.setup(
+    name="respyrator-gui",
+    version="0.0.1",
+    description="Respyrator graphical user interface",
+    url="https://respyrator.github.io/respirador/",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+)

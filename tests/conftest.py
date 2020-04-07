@@ -2,12 +2,12 @@
 # Installed -------------------------------------------------------------------
 from pytest import fixture
 # Coded -----------------------------------------------------------------------
-from src.sercomm.comm import Comm
+from src.sercomm.arduino import ARDUINO_MEGA
 # Program ---------------------------------------------------------------------
 
 
 @fixture(scope='class')
 def get_comm():
-    ser = Comm()
+    ser = ARDUINO_MEGA
     yield ser
     ser.close()

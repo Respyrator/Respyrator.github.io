@@ -17,6 +17,8 @@ mkdocs-material = "*"
 pygments = "*"
 pymdown-extensions = "*"
 mkdocs-minify-plugin = "*"
+pytest = "*"
+invoke = "*"
 
 [requires]
 python_version = "3.8"
