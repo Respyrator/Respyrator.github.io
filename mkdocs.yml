@@ -1,7 +1,7 @@
 # 1. Información del Taller
 site_name: Respyrador
 site_description: Respyrador Artificial Open Source
-site_author: Comunidad Maker # TODO:
+site_author: Respyrator
 site_url: https://respyrator.github.io/respirador/
 
 # 2. Repositorio
@@ -10,7 +10,7 @@ repo_url: https://github.com/Respyrator/respirador
 edit_uri: ""
 
 # 3. Copyright
-copyright: Copyright &copy; 2020 Comunidad Maker # TODO:
+copyright: Copyright &copy; 2020 Respyrator
 
 # 4. RRSS
 extra:
@@ -22,26 +22,27 @@ extra:
 nav:
   # Info del proyecto y autores
   - Introducción: index.md
-  - Sobre nosotros: about.md # TODO:
-    # Colaboración
+  - Sobre el proyecto: about.md  # TODO:
+  # Ventilación Mecánica
+  - Ventilación Mecánica:
+    - Que es un Ventilador Mecánico: ventilador/ventilador.md
+    - Como funciona: ventilador/funcionamiento.md
+    - Modos de ventilacion: ventilador/modos.md
+    - Parámetros: ventilador/parametros.md
+    - Gráficas: ventilador/graficas.md
+  # Respyrator
+  - Respyrator:
+    - Respyrator: respyrator/respyrator.md
+  # Como usarlo
+  - Como Usarlo:
+    - Uso: uso/uso.md
+    - Instalacion: uso/instalacion.md
+  # Colaboración
   - Colaborar: 
     - Como colaborar: colaborar/colaborar.md
-    - Como documentar: 
-      - Documentación: colaborar/documentar.md
-      - Escribir en Markdown: colaborar/markdown.md
-      - Carácterísticas extra: colaborar/material.md
-  - Instalacion: instalacion.md
-  # Requisitos
-  - Requisitos del proyecto:
-    - Requisitos: requisitos/requisitos.md
-    - Recibir datos: requisitos/tx.md
-    - Enviar comandos: requisitos/rx.md
-  # Programa
-  - Proyecto:
-    - Repositorio: programa/repositorio.md
-    - Programa: programa/programa.md
-    - Comunicacion con Respirador: programa/comunicacion.md
-    - Interfaz gráfica: programa/gui.md
+    - Documentación: colaborar/documentar.md
+    - Escribir en Markdown: colaborar/markdown.md
+    - Carácterísticas extra: colaborar/material.md
 
 # 6. Google Analytics
 #google_analytics:
