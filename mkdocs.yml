@@ -27,8 +27,15 @@ nav:
   - Ventilación Mecánica:
     - Que es un Ventilador Mecánico: ventilador/ventilador.md
     - Como funciona: ventilador/funcionamiento.md
-    - Modos de ventilacion: ventilador/modos.md
-    - Parámetros: ventilador/parametros.md
+    - Modos ventilatorios: ventilador/modos.md
+    - Parámetros:
+      - Parámetros: ventilador/parametros/parametros.md
+      - Presión: ventilador/parametros/presion.md
+      - Volumen: ventilador/parametros/volumen.md
+      - Tiempo: ventilador/parametros/tiempo.md
+      - Oxígeno: ventilador/parametros/oxigeno.md
+      - Ventilación Asistida: ventilador/parametros/asistida.md
+      - Pulmón: ventilador/parametros/pulmon.md
     - Gráficas: ventilador/graficas.md
   # Respyrator
   - Respyrator:
