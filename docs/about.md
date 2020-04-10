@@ -1,6 +1,6 @@
 # Sobre nosotros
 
-Este proyecto se distribue con licencia [GPL V3](https://www.gnu.org/licenses/gpl-3.0.html).
+Este proyecto se distribuye con licencia [GPL V3](https://www.gnu.org/licenses/gpl-3.0.html).
 
 El equipo encargado del proyecto somos:
 

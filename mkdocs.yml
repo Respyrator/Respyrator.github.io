@@ -34,8 +34,9 @@ nav:
       - Volumen: ventilador/parametros/volumen.md
       - Tiempo: ventilador/parametros/tiempo.md
       - Oxígeno: ventilador/parametros/oxigeno.md
-      - Ventilación Asistida: ventilador/parametros/asistida.md
       - Pulmón: ventilador/parametros/pulmon.md
+      - Ventilación Asistida: ventilador/parametros/asistida.md
+      - Ventilación Soporte: ventilador/parametros/soporte.md
     - Gráficas: ventilador/graficas.md
   # Respyrator
   - Respyrator:
