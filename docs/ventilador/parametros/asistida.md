@@ -11,7 +11,7 @@ En la ventilación asistida se tiene un mecanismo de feedback o sincronía con e
 ## Triggers
 
 !!! tip "Existen 3 triggers"
-    En realidad existen 3 triggers: presión, flujo y **tiempo**. Pero este último en realidad se fija con FR-T$_{insp}$ en las ventilaciones control y asistida.
+    En realidad existen 3 triggers: presión, flujo y **tiempo**. Pero este último se fija con FR-T$_{insp}$ en las ventilaciones control y asistida.
 
 - Su siglas son **trigger**.
 - El feedback del paciente se puede recoger a través de la presión o del flujo.

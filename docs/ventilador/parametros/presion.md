@@ -26,7 +26,7 @@ Se adjunta una tabla con los parámetros y su información.
 - Es la presión con la que se inserta aire en el paciente.
 
 !!! tip "Control por volumen"
-    Cuando el ventilador se controla por presión, Presión inspiratoria y la Presión pico son el mismo parámetro.
+    Cuando el ventilador se controla por presión, la Presión inspiratoria y la Presión pico son el mismo parámetro.
 
     P$_{insp}$ = P$_{pk}$
 

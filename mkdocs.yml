@@ -37,6 +37,7 @@ nav:
       - Pulmón: ventilador/parametros/pulmon.md
       - Ventilación Asistida: ventilador/parametros/asistida.md
       - Ventilación Soporte: ventilador/parametros/soporte.md
+    - Configuraciones: ventilador/configuraciones.md
     - Gráficas: ventilador/graficas.md
   # Respyrator
   - Respyrator:
