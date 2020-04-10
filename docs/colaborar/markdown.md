@@ -36,7 +36,7 @@ O debes de poner una línea vacía entre medias.
 
 Así se pone un [enlace a una página de Internet](https://lajaqueria.org).
 
-Así se pone un [enlace a una página del propio taller](../instalacion.md).
+Así se pone un [enlace a una página del propio taller](../uso/instalacion.md).
 
 ## Imágenes
 
