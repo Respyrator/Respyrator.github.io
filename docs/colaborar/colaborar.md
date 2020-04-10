@@ -51,7 +51,7 @@ La metodología de trabajo es la siguiente:
         **Tu código debe de pasar todos los tests** ya hechos, y tu **debes de preocuparte de hacer tests exhaustivos para tus mejoras**.  
         **Si no** mantenemos esto, a parte de entorpecer a tus compañer@s, **podrían perderse vidas humanas**.
 
-8. Comprueba en tu servidor local que la documentación haya quedado bien (para más información, ve a la [sección de la documentación](ayuda/ayuda.md))
+8. Comprueba en tu servidor local que la documentación haya quedado bien (para más información, ve a la [sección de la documentación](documentar.md))
 9. Una vez has pasados los tests y la documentación esté bien, guarda los cambios en **commits atómicos**.
 
     !!! info

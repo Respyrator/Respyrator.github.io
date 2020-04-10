@@ -123,7 +123,6 @@ En vez de note es posible utilizar las siguientes etiquetas: summary, info, tip,
 
 Para crear bloques colapsables que puedan ocultar su contenido.
 
-Ejemplo:
 ```` markdown
 ??? "Bloque cerrado. Abreme !!!"
     Ahora lo has abierto.
@@ -132,7 +131,6 @@ Resultado:
 ??? "Bloque cerrado. Abreme !!!"
     Ahora lo has abierto.
 
-Ejemplo:
 ```` markdown
 ???+ "Bloque abierto inicialmente"
 
@@ -145,7 +143,6 @@ Resultado:
     ??? "Bloque dentro de otro bloque"
         Algo de contenido.
 
-Ejemplo:
 ```` markdown
 ??? danger "Bloque con tema de peligro"
     Algo de contenido.
