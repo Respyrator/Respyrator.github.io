@@ -1,3 +1,0 @@
-# Interfaz Gráfica
-
-TODO:
