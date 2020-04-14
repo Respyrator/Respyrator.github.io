@@ -4,7 +4,7 @@ Este proyecto se distribuye con licencia [GPL V3](https://www.gnu.org/licenses/g
 
 El equipo encargado del proyecto somos:
 
-- [Federico García Coca]()
+- [Federico Coca Caba]()
 - [Juan José Merelo Guervós]()
 - [Cristóbal Contreras Rubio]()
 - [Israel Blancas Casa]()
