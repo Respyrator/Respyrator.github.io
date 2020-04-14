@@ -7,7 +7,7 @@ install:
     - pipenv install
 
 script:
-    - mkdocs build --verbose --clean --strict # Build a local version of the docs
+    - pipenv run build # Build a local version of the docs
 
 deploy: # Deploy documentation to Github in the gh_pages branch
     provider: pages

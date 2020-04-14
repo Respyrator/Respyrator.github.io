@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+mkdocs = "*"
+mkdocs-material = "*"
+pygments = "*"
+pymdown-extensions = "*"
+mkdocs-minify-plugin = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+serve = "mkdocs serve"
+deploy = "mkdocs master"
+build = "mkdocs build --verbose --clean --strict"
