@@ -1,9 +1,12 @@
-# Personas que lo hacen posible
+# Sobre nosotros
 
-TODO:
+Este proyecto se distribuye con licencia [GPL V3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-Licencia: ...
+El equipo encargado del proyecto somos:
 
-Autores: Comunidad Maker
+- [Federico Coca Caba]()
+- [Juan José Merelo Guervós]()
+- [Cristóbal Contreras Rubio]()
+- [Israel Blancas Casa]()
 
-[Colaboradores](https://github.com/Respyrator/respirador/graphs/contributors)
+Los contribuidores los puedes encontrar [aquí](https://github.com/Respyrator/respirador/graphs/contributors)
