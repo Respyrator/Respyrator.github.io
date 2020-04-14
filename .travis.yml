@@ -15,6 +15,6 @@ deploy: # Deploy documentation to Github in the gh_pages branch
     github_token: $GITHUB_TOKEN
     local_dir: site
     on:
-        branch: develop
+        branch: dev
     target-branch: master
     keep-history: true
