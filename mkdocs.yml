@@ -13,10 +13,10 @@ edit_uri: ""
 copyright: Copyright &copy; 2020 Comunidad Maker # TODO:
 
 # 4. RRSS
-extra:
-  social:
-    - type: github
-      link: https://github.com/Respyrator
+# extra:
+#   social:
+#     - type: github
+#       link: https://github.com/Respyrator
 
 # 5. Navegación
 nav:
