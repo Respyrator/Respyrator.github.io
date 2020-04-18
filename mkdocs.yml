@@ -1,22 +1,22 @@
 # 1. Información del Taller
-site_name: Respyrador
-site_description: Respyrador Artificial Open Source
+site_name: Respyrator
+site_description: Ventilador Open Source Software
 site_author: Respyrator
-site_url: https://respyrator.github.io/respirador/
+site_url: https://respyrator.github.io/
 
 # 2. Repositorio
-repo_name: Respyrator/respirador
-repo_url: https://github.com/Respyrator/respirador
+repo_name: Respyrator/respyrator
+repo_url: https://github.com/Respyrator/respyrator
 edit_uri: ""
 
 # 3. Copyright
 copyright: Copyright &copy; 2020 Respyrator
 
 # 4. RRSS
-# extra:
-#   social:
-#     - type: github
-#       link: https://github.com/Respyrator
+extra:
+  social:
+    - type: github
+      link: https://github.com/Respyrator
 
 # 5. Navegación
 nav:
