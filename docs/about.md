@@ -9,4 +9,8 @@ El equipo encargado del proyecto somos:
 - [Cristóbal Contreras Rubio]()
 - [Israel Blancas Casa]()
 
+Con la colaboración de:
+
+- [Manolo Ruiz]()
+
 Los contribuidores los puedes encontrar [aquí](https://github.com/Respyrator/respirador/graphs/contributors)

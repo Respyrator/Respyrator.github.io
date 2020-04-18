@@ -1,6 +1,6 @@
 # Respyrator
 
-Desarrollo Software Python para respiradores electrónicos.
+Desarrollo Software Python para ventiladores mecánicos.
 
 Debido a la alta demanda y la variabilidad en las implementaciones de los diferentes tipos de ventiladores mecánicos en desarrollo, este proyecto trata de ser un pegamento para ser usado por todos ellos. Consiste en cuatro capas o componentes.
 
